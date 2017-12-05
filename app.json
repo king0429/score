@@ -1,12 +1,45 @@
 {
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#38adff",
+    "borderStyle": "#dedede",
+    "list": [
+      {
+      "pagePath": "pages/first/first",
+      "text": "我的积分",
+      "iconPath": "/images/point-grey.png",
+      "selectedIconPath": "/images/point.png"
+    },
+      {
+        "pagePath": "pages/present/present",
+        "text": "福利商城",
+        "iconPath": "/images/present-grey.png",
+        "selectedIconPath": "images/present.png"
+      },
+      {
+        "pagePath": "pages/cast/cast",
+        "text": "资讯公告",
+        "iconPath": "/images/cast-grey.png",
+        "selectedIconPath": "/images/cast.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "/images/mine-grey.png",
+        "selectedIconPath": "/images/mine.png"
+      }                
+    ]
+  },
   "pages": [
-            "pages/first/first",
+        "pages/present/present",
+    "pages/first/first",
     "pages/bind/bind",
     "pages/signup/signup",
-
     "pages/index/index",
-    "pages/bindstaff/bindstaff"
+    "pages/bindstaff/bindstaff",
 
+    "pages/cast/cast",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",
