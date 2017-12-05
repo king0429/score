@@ -11,4 +11,12 @@
       </view>
     </view>
   </view>
+  <view class='search'>
+    <input placeholder='输入关键词搜索福利项目'></input>
+    <image src='/images/search.png'></image>
+  </view>
+  <view class='convert'>
+    <view class='all'>全部</view>
+    <view>积分兑换</view>
+  </view>
 </view>

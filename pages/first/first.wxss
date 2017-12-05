@@ -106,8 +106,8 @@ page{
   justify-content:space-around;
 }
 .tabCard view{
-  padding: 10rpx;
-  border-radius: 6rpx;
+  padding:6rpx 10rpx;
+  border-radius:9rpx;
 }
 /*选项卡选中样式  */
 .tabSel{

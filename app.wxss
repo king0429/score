@@ -4,6 +4,7 @@
 } 
 .tap-hover{
   opacity: .8;
+  background: #f0f0f0;
 }
 /*公共banner  */
 .header{

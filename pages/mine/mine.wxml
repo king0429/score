@@ -1,2 +1,123 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class='container'>
+  <view class='banner'>
+    <image src='/images/banner.jpg'></image>
+    <view class='userinfo'>
+      <view class='info'>
+        <text>{{company}}</text>
+        <text>{{department}}</text>
+        <text> · {{name}}</text>
+      </view>
+      <view class='target'>
+        <view>你今天的积分是<text>{{todayScore}}分</text>,距离目标</view>
+        <view>还有<text>{{target-todayScore}}分</text>,加油哦~</view>
+      </view>
+    </view>
+  </view>
+  <view class='userInfo'>
+    <image src='{{userheader}}'></image>
+    <view>
+      <view class='username'>{{name}}</view>
+      <view wx:if='{{usermotto!=""}}'>{{usermotto}}</view>
+      <view wx:if='{{!usermotto}}'>自定义修改座右铭</view>
+    </view>
+    <image class='edit' src='/images/edit.png'></image>
+  </view>
+  <view class='count'>
+    <view class='countItem' wx:for="{{count}}" wx:key='*this'>
+      <view class='show'>
+        <image src='/images/chart.jpg'></image>
+        <view>{{result[index].a+result[index].b+result[index].c+result[index].d}}</view>
+        <view>{{item}}总分</view>
+      </view>
+      <view class='countType'>
+        <view class='countTitle'>
+          <view class='symbol'></view>
+          <view>{{item}}积分</view>
+        </view>
+        <view class='countInfo'>
+          <view class='score'>
+            <text>{{result[index].a+result[index].b+result[index].c+result[index].d}}</text>
+            <text>{{item}}总分</text>
+          </view>
+          <view class='ticket'>
+            <text>{{result[index].ticket}}</text>
+            <text>{{item}}奖券数</text>
+          </view>        
+        </view>
+      </view> 
+      <view class='detail'>
+        <view class='detailItem'>
+          <view>{{item}}A分:</view>
+          <view>{{result[index].a}}</view>        
+        </view>
+        <view class='detailItem'>
+          <view>{{item}}B分:</view>
+          <view>{{result[index].b}}</view>        
+        </view>
+        <view class='detailItem'>
+          <view>{{item}}C分:</view>
+          <view>{{result[index].c}}</view>        
+        </view>
+        <view class='detailItem'>
+          <view>{{item}}D分:</view>
+          <view>{{result[index].d}}</view>        
+        </view>                
+      </view>
+    </view>
+    <view class='countItem'>
+      <view class='show'>
+        <image src='/images/chart.jpg'></image>
+      </view>
+      <view class='countType'>
+        <view class='countTitle'>
+          <view class='symbol'></view>
+          <view>我的排行</view>
+        </view>
+        <view class='countInfo'>
+          <view class='rank'>
+            <text>总分排名:</text>
+            <text>{{rank.sum}}</text>
+          </view>       
+        </view>
+      </view> 
+      <view class='detail'>
+        <view class='detailItem'>
+          <view>A分排名: </view>
+          <view> {{rank.a}}</view>        
+        </view>
+        <view class='detailItem'>
+          <view>B分排名: </view>
+          <view> {{rank.b}}</view>        
+        </view>
+        <view class='detailItem'>
+          <view>C分排名: </view>
+          <view> {{rank.c}} </view>        
+        </view>
+        <view class='detailItem'>
+          <view>D分排名: </view>
+          <view> {{rank.d}}</view>        
+        </view>                
+      </view>
+    </view>    
+  </view>
+  <view class='application'>
+    <view class='appTitle'>
+      <view>
+        <view class='symbol'></view>
+        <view>积分审核进度</view>
+      </view>
+      <view>
+        <view class='{{typeSel==0?"typeSel":""}}' bindtap='typeSel' data-index='0'>A</view>
+        <view class='{{typeSel==1?"typeSel":""}}' bindtap='typeSel' data-index='1'>B</view>
+        <view class='{{typeSel==2?"typeSel":""}}' bindtap='typeSel' data-index='2'>C</view>
+        <view class='{{typeSel==3?"typeSel":""}}' bindtap='typeSel' data-index='3'>D</view>
+      </view>
+    </view>
+    <view class='appType'>
+      <view wx:for="{{status}}" wx:key='*this' class='{{statusSel==index?"statusSel":""}}' bindtap='statusSel' data-index='{{index}}'>{{item}}</view>
+      </view>
+    <view class='appInfo'>
+      暂无数据
+    </view>
+  </view>
+</view>

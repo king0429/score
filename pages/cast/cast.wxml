@@ -1,2 +1,40 @@
-<!--pages/cast/cast.wxml-->
-<text>pages/cast/cast.wxml</text>
+<view class='container'>
+  <view class='header'>
+    <view class='banner'>
+      <image src='/images/banner.jpg'></image>
+      <view class='userinfo'>
+        <view class='info'>
+          <text>{{company}}</text>
+          <text>{{department}}</text>
+          <text> · {{name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='menu'>
+    <view class='menuItem' wx:for='{{menu}}'>
+    <view class='icon' style='background:{{item.bg}}' wx:key="*this">
+      <image src='{{item.icon}}'></image>    
+    </view>
+    <view>{{item.title}}</view>
+    </view>
+  </view>
+  <view class='section'>
+    <view class='plate' wx:for="{{menu}}">
+      <view class='plateTitle'>
+        <view class='symbol' style='background:{{item.bg}}'></view>
+        <view>{{item.title}}</view>
+      </view>
+      <view class='plateinfo'>
+        <view hover-class='tap-hover' wx:for="{{plate[index]}}" wx:for-item='detail' class='plateItem' wx:if="{{plate[index].length>=1}}">
+          <view>{{index+1}}</view>
+          <view>{{detail}}</view>
+          <view>查看</view>
+        </view>
+        <view wx:if="{{plate[index].length<1}}" class='none'>
+          还没有内容
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

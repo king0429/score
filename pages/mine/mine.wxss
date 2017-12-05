@@ -1,1 +1,204 @@
-/* pages/mine/mine.wxss */
+page{
+  background: #f0f0f0;
+}
+.target{
+  width: 100%;
+  text-align: center;
+}
+.target>view{
+  height: 90rpx;
+  line-height: 100rpx;
+  font-size: 16px;
+}
+.target text{
+  font-size: 28px;
+  font-weight: 200;
+  color: #ffc92b;
+}
+.userInfo{
+  height: 142rpx;
+  width: 630rpx;
+  padding: 0 35rpx;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: -2rpx 2rpx 2px 2rpx rgba(111, 111, 111, .5);
+  border-radius: 18rpx;
+  margin-top: -20rpx;
+}
+.userInfo image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 18rpx;
+}
+.username{
+  line-height: 1.4;
+  color: #333;
+}
+.userInfo>view{
+  color: #999;
+}
+image.edit{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  top: 12rpx;
+}
+.count{
+  padding-bottom: 30rpx;
+}
+.countItem{
+  margin: 0 auto;
+  margin-top: 30rpx;
+  height: 485rpx;
+  width: 640rpx;
+  padding: 30rpx;
+  background: #fff;
+  border-radius: 18rpx;
+  box-shadow: -2rpx 2rpx 2px 3rpx rgba(111, 111, 111, .5);  
+}
+.show{
+  width: 100%;
+  height: 220rpx;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 2.2;
+}
+.show image{
+  width: 100%;
+  height: 220rpx;
+  position: absolute;
+  top: 0;
+  z-index: 0; 
+}
+.show view{
+  position: relative;
+  z-index: 3;
+}
+.countTitle{
+  height: 75rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+  font-size: 16px;
+}
+.symbol{
+  width: 27rpx;
+  height: 27rpx;
+  background: #38adff;
+  margin-right: 12rpx;
+  color: #333;
+}
+.countInfo{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.countInfo>view{
+  height: 100%;
+  width: 50%;
+  font-size: 14px;
+  line-height: 100rpx;
+}
+.score text:first-child,.ticket text:first-child{
+  font-size: 26px;
+  color: #ffc92b;
+  margin-right: 12rpx;
+}
+.detail{
+  height: 90rpx;
+  display: flex;
+  font-size: 14px;
+}
+.detail>view{
+  display: flex;
+  width: 25%;
+  height: 100%;
+  line-height: 90rpx;
+  /* justify-content: center; */
+  font-size: 12px;
+}
+.detail>view view:last-child{
+   color: #ffc92b
+}
+.rank>text:last-child{
+  font-size: 26px;
+  color: #ffc92b;
+}
+.application{
+  width: 700rpx;
+  height: 330rpx;
+  margin:0 auto;
+  padding-bottom: 20rpx;
+}
+.appTitle{
+  display: flex;
+  height: 100rpx;
+  padding: 0 20rpx;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 18rpx;
+  box-shadow: -2rpx 2rpx 2px 2rpx rgba(111, 111, 111, .5);  
+}
+.appTitle>view{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: #333;
+}
+.appTitle>view:first-child{
+  width: 50%;
+}
+.appTitle>view:last-child{
+  width: 50%;
+  justify-content: space-between;
+}
+.appTitle>view:last-child view{
+  padding: 9rpx 12rpx;
+  border-radius: 6rpx;
+}
+.typeSel{
+  background: #38adff;
+  color: #fff;
+}
+.appType{
+  height: 105rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.appType>view{
+  width: 115rpx;
+  height: 50rpx;
+  border-radius: 18rpx;
+  font-size: 14px;
+  line-height: 50rpx;
+  text-align: center;
+  background: #fff;
+  color: #999;
+}
+view.statusSel{
+  background: #ffc92b;
+  color: #fff;
+}
+.appInfo{
+  min-height: 85rpx;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 18rpx;
+  color: #999;
+  box-shadow: -2rpx 2rpx 2px 2rpx rgba(111, 111, 111, .5);    
+}
