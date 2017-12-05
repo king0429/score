@@ -1,0 +1,43 @@
+/* pages/bind/bind.wxss */
+page{
+  height: 100%;
+}
+.boss,.staff{
+  width: 100%;
+  height: 100%;
+}
+.boss{
+  padding-top: 160rpx;
+  /* background: red; */
+}
+
+.item{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+}
+.item input{
+  width: 510rpx;
+  padding: 0 20rpx;
+  height: 80rpx;
+  border: 1px solid #888;
+  font-size: 14px;
+  border-radius: 6rpx;
+}
+.btn-sub{
+  width: 550rpx;
+  height: 80rpx;
+  background: #38adff;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 6rpx;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-top: 20rpx;
+
+}
+.staff{
+  padding-top: 300rpx;
+}

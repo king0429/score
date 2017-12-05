@@ -1,0 +1,32 @@
+<view class='container'>
+  <view class='boss' wx:if="{{sign_type==1}}">
+    <view class='item'>
+      <input placeholder='请输入公司全称'></input>
+    </view>
+    <view class='item'>
+      <input placeholder='请输入公司简称'></input>
+    </view>
+    <view class='item'>
+      <input placeholder='请设置登录邮箱'></input>
+    </view>
+    <view class='item'>
+      <input type='password' placeholder='请设置登录密码'></input>
+    </view>
+    <view class='item'>
+      <input placeholder='请输入姓名'></input>
+    </view>
+    <view class='item'>
+      <input placeholder='请输入联系电话'></input>
+    </view> 
+    <view class='btn-sub'>提交申请</view>               
+  </view>
+  <view class='staff'>
+     <view class='item'>
+      <input placeholder='请输入姓名'></input>
+    </view>
+    <view class='item'>
+      <input placeholder='请输入联系电话'></input>
+    </view> 
+    <view class='btn-sub' bindtap='bind'>提交申请</view>  
+  </view>
+</view>

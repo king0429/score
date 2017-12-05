@@ -1,5 +1,6 @@
 page{
   height: 100%;
+  background: #f0f0f0;
 }
 .wrap{
   height: 100%;
@@ -20,10 +21,10 @@ page{
 .board view{
   font-size: 14px;
   margin-top: 20rpx;
-  color: #333;
+  color: #999;
 }
 .solgan{
   font-size: 16px;
-  color: #999;
-  margin-top: 50rpx;
+  color: #333;
+  margin-top: 250rpx;
 }

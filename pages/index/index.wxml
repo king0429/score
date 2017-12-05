@@ -5,6 +5,6 @@
       <image src='{{userheader}}'></image>
       <view>{{nickname}}</view>
     </view>
-    <view class='solgan'>欢迎使用使用智诚集分宝</view>
+    <view class='solgan'>欢迎使用智诚集分宝</view>
   </view>
 </view>

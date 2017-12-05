@@ -1,4 +1,4 @@
-// pages/signup/signup.js
+// pages/bind/bind.js
 Page({
 
   /**
@@ -12,11 +12,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+  
   },
-  tosign:function(e){
+  bind:function(e){
+    // 提交申请
     wx.navigateTo({
-      url: '/pages/bind/bind?type='+ e.currentTarget.dataset.tip,
+      url: '/pages/firsr/first',
     })
   }
 })

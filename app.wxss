@@ -1,5 +1,7 @@
 /**app.wxss**/
 .container {
   height: 100%;
-
 } 
+.tap-hover{
+  opacity: .8;
+}

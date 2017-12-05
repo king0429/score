@@ -21,5 +21,8 @@ App({
     })
   },
   globalData: {
+    company:'北京乐兔',
+    department:'研发部',
+    name:'金行'
   }
 })

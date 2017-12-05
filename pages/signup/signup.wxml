@@ -1,2 +1,8 @@
-<!--pages/signup/signup.wxml-->
-<text>pages/signup/signup.wxml</text>
+<view class='container'>
+  <view class='wrap'>
+    <view class='btnlist'>
+      <view class='boss' bindtap='tosign' hover-class='tap-hover' data-tip='1'>我是老板</view>
+      <view class='staff' bindtap='tosign' hover-class='tap-hover' data-tip='2'>我是员工</view>
+    </view>
+  </view>
+</view>

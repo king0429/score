@@ -1,0 +1,48 @@
+/* pages/first/first.wxss */
+.banner{
+  position: relative;
+  width: 100%;
+  height: 480rpx;
+}
+.banner image{
+  width: 100%;
+  height: 480rpx;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+.userinfo{
+  height: 100%;
+  color: #fff;
+  width: 100%;
+}
+.info{
+  height: 150rpx;
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 16px;
+}
+.score{
+  padding: 0 20rpx;
+  height: 240rpx;
+  margin-top: 50rpx;
+}
+.info text:first-child{
+  margin: 0 20rpx;
+}
+.pointTitle{
+  font-size: 16px;
+  line-height: 1.6;
+}
+.point{
+  display: flex;
+  font-size: 14px;
+  margin-top: 50rpx;
+}
+.item{
+  width: 33%;
+  text-align: center;
+}
+.item text{
+  line-height: 2.2;
+}
