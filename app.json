@@ -31,19 +31,19 @@
     ]
   },
   "pages": [
-        "pages/appdetail/appdetail",
-    "pages/application/application",
     "pages/first/first",
     "pages/castDetail/castDetail",
     "pages/mine/mine",
+    "pages/appdetail/appdetail",
+    "pages/application/application",
     "pages/cast/cast",
     "pages/rank/rank",
     "pages/present/present",
     "pages/bind/bind",
     "pages/signup/signup",
     "pages/index/index",
-    "pages/bindstaff/bindstaff"
-
+    "pages/bindstaff/bindstaff",
+    "pages/check/check"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,16 +1,13 @@
 // pages/appdetail/appdetail.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    freq_type:['小时','天','月','年'],
+    point_type:['+','-'],
+    type_type:['A','B','C','D'],
+    sheet:{
+      _sn:'001',type:1,item:'考勤',demand:'每天9点之前打卡',info:'可以压哨打卡',freq:1,point:10,checker:'董事长',isAdd:1,
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
     var that = this;
     that.setData({
@@ -19,53 +16,4 @@ Page({
       name: getApp().globalData.name
     })    
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })

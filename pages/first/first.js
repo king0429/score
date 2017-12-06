@@ -57,7 +57,9 @@ Page({
         })
       break;
       case '积分审核':
-        console.log(3)
+        wx.navigateTo({
+          url: '/pages/check/check',
+        })
       break;            
     }
   },

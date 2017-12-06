@@ -11,4 +11,73 @@
       </view>
     </view>
   </view>
+  <view class='sheet'>
+    <view class='sheetTitle'>积分申请明细</view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>编号</view>
+      </view>
+      <view>{{sheet._sn}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>类别</view>
+      </view>
+      <view>{{type_type[sheet.type]}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>项目</view>
+      </view>
+      <view>{{sheet.item}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>要求</view>
+      </view>
+      <view>{{sheet.demand}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>说明</view>
+      </view>
+      <view>{{sheet.info}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>频率</view>
+      </view>
+      <view>{{sheet.freq}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>分值</view>
+      </view>
+      <view><text>{{point_type[sheet.isAdd]}} </text>{{sheet.point}} <text>分</text></view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>审核者</view>
+      </view>
+      <view>{{sheet.checker}}</view>
+    </view>
+    <view class='sheetItem'>
+      <view>
+        <view class='symbol'></view>    
+        <view>原因</view>
+      </view>
+      <view>
+        <input placeholder='请输入申请原因'></input>
+      </view>
+    </view>
+    <view class='btn-sub'>提交</view>                                
+  </view>
 </view>
