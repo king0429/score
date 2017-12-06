@@ -20,7 +20,7 @@
       </view>
     </view>
   </view>
-  <view class='detail'>
+  <view class='detail' wx:if="{{sel!='null'}}">
     <view class='detailTitle'>
       <view>
         <view class='symbol' style='background:{{color[selType]}}'></view>
@@ -33,7 +33,7 @@
     </view>
     <view class='btn-add' bindtap='toadd' hover-class='tap-hover'>添加临时申请</view>
     <view class='detailInfo'>
-      <view class='detailItem' wx:for="{{application}}" wx:key="*this" data-id='{{item.id}}' wx:if="{{app.type==sel}}">
+      <view class='detailItem' wx:for="{{application}}" wx:key="*this" bindtap='todetail' data-id='{{item.id}}' wx:if="{{item.type==sel}}">
         <view>
           <view class='isTap' bindtap='changeSel' data-index='{{index}}'>
             <image wx:if='{{isTap[index]==1}}' src='/images/select.png'></image>
@@ -45,7 +45,16 @@
           <image src='/images/forward.png'></image>
         </view>
       </view>
+      <view class='detailItem none' wx:if='{{itemLen==0}}'>暂无数据...</view>
     </view>
-    <view class='footer'></view>
   </view>
+    <view class='footer' wx:if="{{sel!='null'&&itemLen>0}}">
+      <view>
+        <view bindtap='isAll' data-all='{{isAll}}'>
+          <image src='/images/select.png' wx:if='{{isAll==1}}'></image>
+        </view>
+        <view>全选</view>
+      </view>
+      <view hover-class='tap-sub'>一键申请</view>
+    </view>  
 </view>

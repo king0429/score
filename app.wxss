@@ -37,3 +37,7 @@
 .info text:first-child{
   margin: 0 20rpx;
 }
+view.footer>view.tap-sub{
+  background: #38adff;
+  color: #fff;
+}

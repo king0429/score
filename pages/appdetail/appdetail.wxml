@@ -1,0 +1,14 @@
+<view class='cantainer'>
+  <view class='header'>
+    <view class='banner'>
+      <image src='/images/banner.jpg'></image>
+      <view class='userinfo'>
+        <view class='info'>
+          <text>{{company}}</text>
+          <text>{{department}}</text>
+          <text> · {{name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
