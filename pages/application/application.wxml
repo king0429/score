@@ -1,0 +1,51 @@
+<loading wx:if="{{hidden==0}}">加载中</loading>
+<view class='container'>
+  <view class='header'>
+    <view class='banner'>
+      <image src='/images/banner.jpg'></image>
+      <view class='userinfo'>
+        <view class='info'>
+          <text>{{company}}</text>
+          <text>{{department}}</text>
+          <text> · {{name}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='pointType'>
+    <view wx:for='ABCD' wx:key='*this' bindtap='showDetail' data-index='{{index}}'>
+      <view class='point'>
+        <view class='symbol' style='background:{{color[index]}}'>{{item}}</view>
+        <view>{{item}}分申请</view>      
+      </view>
+    </view>
+  </view>
+  <view class='detail'>
+    <view class='detailTitle'>
+      <view>
+        <view class='symbol' style='background:{{color[selType]}}'></view>
+        <view>{{sel}}分申请</view>    
+      </view>
+      <view class='tabCard'>
+        <view bindtap='changeType' data-index='1' class='{{changeType==1?"selType":""}}'>公共类</view>
+        <view bindtap='changeType' data-index='2' class='{{changeType==2?"selType":""}}'>岗位类</view>
+      </view>
+    </view>
+    <view class='btn-add' bindtap='toadd' hover-class='tap-hover'>添加临时申请</view>
+    <view class='detailInfo'>
+      <view class='detailItem' wx:for="{{application}}" wx:key="*this" data-id='{{item.id}}' wx:if="{{app.type==sel}}">
+        <view>
+          <view class='isTap' bindtap='changeSel' data-index='{{index}}'>
+            <image wx:if='{{isTap[index]==1}}' src='/images/select.png'></image>
+          </view>
+          <view>{{item.type}}</view>
+        </view>
+        <view>
+          <view>{{item.info}}分</view>
+          <image src='/images/forward.png'></image>
+        </view>
+      </view>
+    </view>
+    <view class='footer'></view>
+  </view>
+</view>

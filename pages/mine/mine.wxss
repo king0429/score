@@ -1,5 +1,6 @@
 page{
   background: #f0f0f0;
+  height: 100%;
 }
 .target{
   width: 100%;
@@ -8,10 +9,10 @@ page{
 .target>view{
   height: 90rpx;
   line-height: 100rpx;
-  font-size: 16px;
+  font-size: 14px;
 }
 .target text{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 200;
   color: #ffc92b;
 }
@@ -41,6 +42,7 @@ page{
 }
 .userInfo>view{
   color: #999;
+  font-size: 14px;
 }
 image.edit{
   width: 40rpx;
@@ -55,13 +57,13 @@ image.edit{
 }
 .countItem{
   margin: 0 auto;
-  margin-top: 30rpx;
+  margin-top: 20rpx;
   height: 485rpx;
   width: 640rpx;
   padding: 30rpx;
   background: #fff;
   border-radius: 18rpx;
-  box-shadow: -2rpx 2rpx 2px 3rpx rgba(111, 111, 111, .5);  
+  box-shadow: -2rpx 2rpx 2px 2rpx rgba(111, 111, 111, .5);  
 }
 .show{
   width: 100%;
@@ -73,7 +75,7 @@ image.edit{
   flex-direction: column;
   justify-content: center;
   font-size: 16px;
-  line-height: 2.2;
+  line-height: 1.8;
 }
 .show image{
   width: 100%;
@@ -85,6 +87,10 @@ image.edit{
 .show view{
   position: relative;
   z-index: 3;
+}
+.show view:nth-child(2){
+  font-size:30px;
+  color:#ffc92b;
 }
 .countTitle{
   height: 75rpx;
@@ -110,11 +116,13 @@ image.edit{
   width: 50%;
   font-size: 14px;
   line-height: 100rpx;
+  display: flex;
+  align-items: flex-end;
 }
-.score text:first-child,.ticket text:first-child{
-  font-size: 26px;
-  color: #ffc92b;
-  margin-right: 12rpx;
+.countInfo>view text:first-child{
+font-size:24px;
+color:#ffc92b; 
+margin-right: 6rpx;
 }
 .detail{
   height: 90rpx;
@@ -201,4 +209,60 @@ view.statusSel{
   border-radius: 18rpx;
   color: #999;
   box-shadow: -2rpx 2rpx 2px 2rpx rgba(111, 111, 111, .5);    
+}
+view.rank text:first-child{
+  color: #333;
+  font-size: 16px;
+}
+view.rank text:last-child{
+  color: #ff0100;
+}
+.model{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+.window{
+  color: #333;
+  background: #fff;
+  padding: 40rpx 50rpx;
+  border-radius: 12rpx;
+  font-size: 14px;
+  width: 540rpx;
+}
+.windowTitle{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.window textarea{
+  border: 1px solid #dedede;
+  padding: 6rpx;
+  width: 97%;
+  height: 240rpx;
+}
+.btn-window{
+  display: flex;
+  height: 60rpx;
+  align-items: center;
+  margin-top: 30rpx;
+  justify-content: space-between;
+}
+.btn-window view{
+  width: 45%;
+  height: 100%;
+  line-height: 60rpx;
+  text-align: center;
+  background: #38adff;
+  color: #fff;
+}
+.btn-window view:nth-child(1){
+  background: #8a8a8a;
+  color: #fff;
 }

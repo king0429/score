@@ -1,0 +1,101 @@
+page{
+  min-height: 100%;
+  background: #f0f0f0;
+}
+.title{
+  display: flex;
+  font-size: 16px;
+  padding: 0 20rpx;
+  background: #fff;
+  height: 90rpx;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+}
+.title image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 12rpx;
+}
+.conditions{
+  height: 100rpx;
+  padding: 0 20rpx;
+  display: flex;
+  align-items: center;
+  background:  #fff;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.nameSearch{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 70%;
+  border: 1px solid #dedede;
+  padding: 0 9rpx;
+}
+.nameSearch image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.nameSearch input{
+  font-size: 14px;
+  color: #999;
+}
+.conditions .picker:nth-child(2){
+  width: 20%;
+  height: 70%;
+  border: 1px solid #dedede;
+  line-height: 70rpx;
+  text-align: center;
+  color: #999;
+}
+.conditions .picker:nth-child(3){
+  width: 15%;
+  height: 70%;
+  border: 1px solid #dedede;
+  line-height: 70rpx;
+  text-align: center;
+  color: #999;
+}
+.table{
+  width: 100%;
+  background: #fff;
+  font-size: 14px;
+}
+.th{
+  height: 70rpx;
+  display: flex;
+  background: #dedede;
+  color: #000;
+}
+.th>view{
+  width: 20%;
+  text-align: center;
+  line-height: 70rpx;
+}
+.th>view:first-child{
+  width: 15%;
+}
+.th>view:nth-child(4){
+  width: 25%;
+}
+.tr{
+  height: 75rpx;
+  display: flex;
+  /* background: #dedede; */
+  color: #000; 
+}
+.tr>view{
+  width: 20%;
+  text-align: center;
+  line-height: 75rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tr>view:first-child{
+  width: 15%;
+}
+.tr>view:nth-child(4){
+  width: 25%;
+}

@@ -1,4 +1,4 @@
-<view class='container'>
+<view class='container' style='overflow:{{scroll}}'>
   <view class='banner'>
     <image src='/images/banner.jpg'></image>
     <view class='userinfo'>
@@ -38,7 +38,7 @@
   </view>
   <view class='nav'>
     <view class='navList' wx:for="{{nav}}" wx:key="{{*this}}">
-      <view wx:for="{{nav[index]}}" wx:key="{{*this}}" wx:for-item="item" class='navItem'>
+      <view wx:for="{{nav[index]}}" wx:key="{{*this}}" wx:for-item="item" class='navItem' bindtap='todetail' data-index='{{item.title}}'>
         <view class='navInfo'>
           <image src='{{item.icon}}'></image>
           <view>{{item.title}}</view>
@@ -70,6 +70,16 @@
       <view>{{item.add}}</view>
       <view>{{item.rec}}</view>
       <view>{{-(-item.add-item.rec)}}</view>
+    </view>
+  </view>
+</view>
+<view class='model' wx:if="{{hidden==0}}">
+  <view class='window'>
+    <view class='windowTitle'>请输入您的目标分</view>
+    <input type='number'></input>
+    <view class='btn-window'>
+      <view bindtap='close'>取消</view>
+      <view bindtap='pointEdit'>确定</view>
     </view>
   </view>
 </view>

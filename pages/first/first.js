@@ -37,6 +37,36 @@ Page({
       tabSel:e.currentTarget.dataset.index
     })
   },
+  todetail:function(e){
+    var that = this;
+    switch (e.currentTarget.dataset.index){
+      case '积分申请':
+        wx.navigateTo({
+          url: '/pages/application/application',
+        })
+      break;
+      case '排名查询':
+        wx.navigateTo({
+          url: '/pages/rank/rank',
+        })
+      break;
+      case '修改目标分':
+        that.setData({
+          hidden:0,
+          scroll:'hidden'
+        })
+      break;
+      case '积分审核':
+        console.log(3)
+      break;            
+    }
+  },
+  close:function(){
+    this.setData({
+      hidden:1,
+      scroll:'visitable'
+    })
+  },
   /**
    * 用户点击右上角分享
    */

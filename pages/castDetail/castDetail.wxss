@@ -1,0 +1,27 @@
+page{
+  min-height: 100%;
+  background: #f0f0f0;
+}
+.article_title{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+}
+.article_time{
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+.article_info{
+  padding: 0 30rpx;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: 1rpx;
+  line-height: 1.8;
+  word-break:break-all;
+  word-wrap: break-word;
+}

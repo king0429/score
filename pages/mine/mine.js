@@ -1,6 +1,5 @@
 // pages/mine/mine.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -49,6 +48,19 @@ Page({
     var that = this;
     that.setData({
       statusSel: e.currentTarget.dataset.index
+    })
+  },
+  editMotto:function(){
+    var that = this;
+    that.setData({
+      hidden:0,
+      scroll:'hidden'
+    })
+  },
+  close:function(){
+    this.setData({
+      hidden:1,
+      scroll:'visitable'
     })
   }
 })

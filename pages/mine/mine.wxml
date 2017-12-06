@@ -1,4 +1,4 @@
-<view class='container'>
+<view class='container' style='overflow:{{scroll}}'>
   <view class='banner'>
     <image src='/images/banner.jpg'></image>
     <view class='userinfo'>
@@ -20,7 +20,7 @@
       <view wx:if='{{usermotto!=""}}'>{{usermotto}}</view>
       <view wx:if='{{!usermotto}}'>自定义修改座右铭</view>
     </view>
-    <image class='edit' src='/images/edit.png'></image>
+    <image class='edit' bindtap='editMotto' src='/images/edit.png'></image>
   </view>
   <view class='count'>
     <view class='countItem' wx:for="{{count}}" wx:key='*this'>
@@ -118,6 +118,16 @@
       </view>
     <view class='appInfo'>
       暂无数据
+    </view>
+  </view>
+</view>
+<view class='model' wx:if="{{hidden==0}}">
+  <view class='window'>
+    <view class='windowTitle'>请输入您的座右铭</view>
+    <textarea maxlength='140'></textarea>
+    <view class='btn-window'>
+      <view bindtap='close'>取消</view>
+      <view bindtap='pointEdit'>确定</view>
     </view>
   </view>
 </view>

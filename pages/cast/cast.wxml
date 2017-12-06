@@ -26,9 +26,9 @@
         <view>{{item.title}}</view>
       </view>
       <view class='plateinfo'>
-        <view hover-class='tap-hover' wx:for="{{plate[index]}}" wx:for-item='detail' class='plateItem' wx:if="{{plate[index].length>=1}}">
+        <view bindtap='todetail' data-id='{{detail.id}}' hover-class='tap-hover' wx:for="{{plate[index]}}" wx:for-item='detail' class='plateItem' wx:key='*this' wx:if="{{plate[index].length>=1}}">
           <view>{{index+1}}</view>
-          <view>{{detail}}</view>
+          <view>{{detail.title}}</view>
           <view>查看</view>
         </view>
         <view wx:if="{{plate[index].length<1}}" class='none'>

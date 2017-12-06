@@ -5,11 +5,11 @@
     "borderStyle": "#dedede",
     "list": [
       {
-      "pagePath": "pages/first/first",
-      "text": "我的积分",
-      "iconPath": "/images/point-grey.png",
-      "selectedIconPath": "/images/point.png"
-    },
+        "pagePath": "pages/first/first",
+        "text": "我的积分",
+        "iconPath": "/images/point-grey.png",
+        "selectedIconPath": "/images/point.png"
+      },
       {
         "pagePath": "pages/present/present",
         "text": "福利商城",
@@ -27,20 +27,22 @@
         "text": "个人中心",
         "iconPath": "/images/mine-grey.png",
         "selectedIconPath": "/images/mine.png"
-      }                
+      }
     ]
   },
   "pages": [
-    "pages/mine/mine",
-        "pages/cast/cast",
-        "pages/present/present",
+
     "pages/first/first",
+    "pages/castDetail/castDetail",
+    "pages/mine/mine",
+    "pages/cast/cast",
+            "pages/application/application",
+    "pages/rank/rank",
+    "pages/present/present",
     "pages/bind/bind",
     "pages/signup/signup",
     "pages/index/index",
     "pages/bindstaff/bindstaff"
-
-
 
   ],
   "window": {
