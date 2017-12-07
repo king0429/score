@@ -1,7 +1,7 @@
 /* pages/first/first.wxss */
 page{
   background: #f0f0f0;
-  height: 100%;
+  min-height: 100%;
 }
 
 .score{
@@ -59,8 +59,8 @@ page{
   font-size: 14px;
 }
 .navItem image{
-  height: 40rpx;
-  width: 40rpx;
+  height: 50rpx;
+  width: 50rpx;
   margin-right: 20rpx;
 }
 .navInfo{

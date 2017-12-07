@@ -31,13 +31,13 @@
     ]
   },
   "pages": [
-            "pages/check/check",
+
     "pages/first/first",
     "pages/castDetail/castDetail",
     "pages/mine/mine",
     "pages/appdetail/appdetail",
     "pages/application/application",
-
+            "pages/check/check",
     "pages/cast/cast",
     "pages/rank/rank",
     "pages/present/present",

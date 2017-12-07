@@ -19,7 +19,7 @@
       </view>
     </view>
     <view class='checkInfo'>
-      <view class='checkItem' wx:for="{{check}}" wx:key='*this' wx:if="{{sel!=0}}">
+      <view class='checkItem' wx:for="{{co_check}}" wx:key='*this' wx:if="{{sel!=0}}">
         <view>
           <view class='checkName'>{{item.name}}</view>
           <view class='checkClass'>
@@ -32,6 +32,10 @@
           <image src='/images/forward.png'></image>
         </view>
       </view>
+      <view class='checkItem none' wx:if='{{isNone==1}}'>暂无数据..</view>
     </view>    
+  </view>
+  <view class='footer'>
+  
   </view>
 </view>
