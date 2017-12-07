@@ -5,7 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    tabCard: ['全部','未审核','已通过','已驳回'],
+    point_type:['+','-'],
+    sel:'0',
+    check:[
+      {name:'审核01', info:'审核详情,包含审核内容和提交的信息',date:'2017-12-01',type:'1',status:'0',point:10},
+      { name: '审核02', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-02', type: '1', status: '0', point: 10 },
+      { name: '审核03', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-03', type: '0', status: '0', point: 10 },
+      { name: '审核04', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-04', type: '1', status: '0', point: 10 },
+      { name: '审核05', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-05', type: '1', status: '1', point: 10 },
+      { name: '审核06', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-06', type: '0', status: '2', point: 10 },
+      { name: '审核07', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-07', type: '0', status: '0', point: 10 },
+      { name: '审核08', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-08', type: '0', status: '1', point: 10 },
+      { name: '审核09', info: '审核详情,包含审核内容和提交的信息', date: '2017-12-09', type: '1', status: '0', point: 10 },
+
+    ]
   },
 
   /**
@@ -14,53 +28,12 @@ Page({
   onLoad: function (options) {
   
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+  changeTab:function(e){
+    console.log(e.currentTarget.dataset)
+    var that = this;
+    that.setData({
+      sel:e.currentTarget.dataset.index
+    })
   }
+
 })

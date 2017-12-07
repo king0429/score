@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class='menu'>
-    <view class='menuItem' wx:for='{{menu}}'>
+    <view class='menuItem' wx:for='{{menu}}' wx:key='*this'>
     <view class='icon' style='background:{{item.bg}}' wx:key="*this">
       <image src='{{item.icon}}'></image>    
     </view>
@@ -20,7 +20,7 @@
     </view>
   </view>
   <view class='section'>
-    <view class='plate' wx:for="{{menu}}">
+    <view class='plate' wx:for="{{menu}}" wx:key="*this">
       <view class='plateTitle'>
         <view class='symbol' style='background:{{item.bg}}'></view>
         <view>{{item.title}}</view>

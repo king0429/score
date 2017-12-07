@@ -39,6 +39,7 @@ page{
 .username{
   line-height: 1.4;
   color: #333;
+  font-size: 12px;
 }
 .userInfo>view{
   color: #999;
@@ -191,7 +192,7 @@ margin-right: 6rpx;
 .appType>view{
   width: 115rpx;
   height: 50rpx;
-  border-radius: 18rpx;
+  border-radius: 60rpx;
   font-size: 14px;
   line-height: 50rpx;
   text-align: center;
